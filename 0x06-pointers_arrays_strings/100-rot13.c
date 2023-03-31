@@ -33,7 +33,7 @@ char *rot13(char *str)
 	{
 		for (index2 = 0; index2 < 52 ; index2++)
 		{
-			if (str[++index1] == alphabet[index2])
+			if (str[index1] == alphabet[index2])
 			{
 				str[index1] = rot13key[index2];
 				break;
