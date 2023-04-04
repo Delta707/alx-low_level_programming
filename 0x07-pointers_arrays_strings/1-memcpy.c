@@ -4,7 +4,9 @@
  * _memcpy - Copies memory area function
  * @dest: Data stored here
  * @src: Data coped
- * @n: memory of byte
+ * @n: number of byte
+ *
+ * Return: dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
