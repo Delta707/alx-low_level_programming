@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
- * _strstr - substring function
- * @haystack: input stored
- * @needle: input stored
+ * _strstr - locate substring
+ * @haystack: locally stored
+ * @needle: locally stored
  * Return: always 0
  */
 
 char *_strstr(char *haystack, char *needle)
 {
-	for (; *haystack != '\0'; haystack++)
+	for (; *haystack != '\0' ; haystack++)
 	{
-		char *l = haystack;
+		char *i = haystack;
 		char *t = needle;
 
-		while (*l == *t && *t != '\0')
+		while (*i == *t && *t != '\0')
 		{
-			l++;
+			i++;
 			t++;
 		}
 		if (*t == '\0')

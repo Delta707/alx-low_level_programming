@@ -1,24 +1,26 @@
 #include "main.h"
 
 /**
- * _strpbrk - Searching of a string
- * @s: input stored
+ * _strpbrk - function that search strings
+ * @s: locally stored
  * @accept: locally stored
+ *
  * Return: always 0
  */
 
 char *_strpbrk(char *s, char *accept)
 {
-	int d;
+	int i;
 
 	while (*s)
 	{
-		for (d = 0; accept[d] ; d++)
+		for (i = 0; accept[i]; i++)
 		{
-			if (*s == accept[d])
+			if (*s == accept[i])
 				return (s);
 		}
 		s++;
 	}
 	return ('\0');
 }
+

@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _isupper - Uppercase letter function
- * @c: char to scan
+ * _isupper - uppercase letter
+ * @c: char to check
  *
  * Return: 0 or 1
  */
